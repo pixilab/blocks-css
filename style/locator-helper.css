@@ -1,0 +1,8 @@
+/**
+	Hide the play/pause button for audio/video media when used inside a Locator.
+	Apply this CSS to the block that contains the locator (not the located blocks),
+	and it will apply to all located blocks.
+ */
+.locator-located .play-btn-wrap {
+	display: none;
+}

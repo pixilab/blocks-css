@@ -1,0 +1,193 @@
+{
+	"width": 500,
+	"height": 340,
+	"root": {
+		"mNextID": 13,
+		"blocks": [
+			{
+				"titlePos": 0,
+				"onValue": 0,
+				"enclosing": "root",
+				"id": 11,
+				"containerData": {
+					"kAARect": {
+						"y": 250,
+						"x": 440,
+						"width": 40,
+						"height": 40,
+						"@cls": ".AARect"
+					}
+				},
+				"propPath": "Spot.Mob1.connected",
+				"propType": 1,
+				"htmlClass": "flashing",
+				"@cls": ".Indicator"
+			},
+			{
+				"titlePos": 1,
+				"behavior": 20,
+				"id": 10,
+				"containerData": {
+					"kAARect": {
+						"y": 240,
+						"x": 320,
+						"width": 104,
+						"height": 64,
+						"@cls": ".AARect"
+					}
+				},
+				"htmlClass": "sliderSwitch",
+				"bklName": "iOS Style",
+				"v1": {
+					"tags": "buttonon",
+					"@cls": ".TagSet"
+				},
+				"enclosing": "root",
+				"@cls": ".Button"
+			},
+			{
+				"titlePos": 4,
+				"behavior": 20,
+				"propType": 0,
+				"id": 5,
+				"containerData": {
+					"kAARect": {
+						"y": 20,
+						"x": 240,
+						"width": 200,
+						"height": 200,
+						"@cls": ".AARect"
+					}
+				},
+				"bklName": "invisible",
+				"htmlClass": "invisible",
+				"v1": {
+					"tags": "buttonon",
+					"@cls": ".TagSet"
+				},
+				"enclosing": "root",
+				"@cls": ".Button"
+			},
+			{
+				"titlePos": 3,
+				"behavior": 20,
+				"propType": 0,
+				"id": 2,
+				"containerData": {
+					"kAARect": {
+						"y": 120,
+						"x": 20,
+						"width": 200,
+						"height": 80,
+						"@cls": ".AARect"
+					}
+				},
+				"bklName": "Square",
+				"htmlClass": "square",
+				"v1": {
+					"tags": "buttonon",
+					"@cls": ".TagSet"
+				},
+				"enclosing": "root",
+				"@cls": ".Button"
+			},
+			{
+				"playInline": false,
+				"mMedia": {
+					"mMimePrim": "image",
+					"mMimeSec": "png",
+					"mFileName": "PIXILAB-logo-200.png",
+					"mFileSize": 2650,
+					"mFileTime": 1524641411000,
+					"width": 200,
+					"height": 200,
+					"path": "PIXILAB-logo-200.png",
+					"thumbnails": [
+						{
+							"width": -200,
+							"height": -200,
+							"@cls": ".Dimensions"
+						},
+						{
+							"width": -100,
+							"height": -100,
+							"@cls": ".Dimensions"
+						}
+					],
+					"@cls": ".MediaInfo"
+				},
+				"enclosing": "root",
+				"id": 12,
+				"containerData": {
+					"kAARect": {
+						"x": 240,
+						"y": 20,
+						"width": 200,
+						"height": 200,
+						"@cls": ".AARect"
+					}
+				},
+				"@cls": ".MediaBlock"
+			},
+			{
+				"titlePos": 3,
+				"behavior": 20,
+				"propType": 0,
+				"id": 3,
+				"containerData": {
+					"kAARect": {
+						"y": 220,
+						"x": 20,
+						"width": 200,
+						"height": 80,
+						"@cls": ".AARect"
+					}
+				},
+				"bklName": "Glossy",
+				"htmlClass": "glossy",
+				"v1": {
+					"tags": "buttonon",
+					"@cls": ".TagSet"
+				},
+				"enclosing": "root",
+				"@cls": ".Button"
+			},
+			{
+				"titlePos": 3,
+				"behavior": 20,
+				"propType": 0,
+				"id": 1,
+				"containerData": {
+					"kAARect": {
+						"y": 20,
+						"x": 20,
+						"width": 200,
+						"height": 80,
+						"@cls": ".AARect"
+					}
+				},
+				"bklName": "Plain",
+				"v1": {
+					"tags": "buttonon",
+					"@cls": ".TagSet"
+				},
+				"enclosing": "root",
+				"@cls": ".Button"
+			}
+		],
+		"checkerboard": true,
+		"snapToGrid": true,
+		"bgColor": "#bfbfbf",
+		"id": 1,
+		"timestamp": 1528111870427,
+		"cssUrl": "/public/style/panel-controls.css",
+		"enclosing": "",
+		"@cls": ".Layered"
+	},
+	"autoPlay": true,
+	"loop": true,
+	"@cls": ".RootBlock",
+	"mediaFiles": {
+		"PIXILAB-logo-200.png": "rootblocks4mMedia"
+	}
+}

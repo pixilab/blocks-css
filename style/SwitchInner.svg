@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 width="133.167px" height="60px" viewBox="0 0 133.167 60" enable-background="new 0 0 133.167 60" xml:space="preserve">
+	 <filter id="dropshadow" height="130%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+  <feOffset dx="0" dy="2" result="offsetblur"/> <!-- how much to offset -->
+  <feComponentTransfer>
+    <feFuncA type="linear" slope="0.5"/> <!-- slope is the opacity of the shadow -->
+  </feComponentTransfer>
+  <feMerge>
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+  </feMerge>
+</filter>
+<circle id="O_1_" fill="none" stroke="#808080" stroke-width="2" cx="120.03" cy="29" r="10.075"/>
+<line id="I_1_" fill="none" stroke="#FFFFFF" stroke-width="3" x1="23.351" y1="38.155" x2="23.351" y2="19.845"/>
+<path style="filter:url(#dropshadow)" id="Knob_1_" fill="#FFFFFF" d="M99,29c0,15.74-12.76,28.5-28.5,28.5S42,44.74,42,29C42,13.26,54.76,0.5,70.5,0.5
+	S99,13.26,99,29"/>
+</svg>

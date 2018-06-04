@@ -1,0 +1,136 @@
+
+/* A square button	*/
+.Button-ctl.square>div {
+	border-radius: 0;
+}
+
+
+/*	An invisible square button, only showing a white outline while pressed to
+	provide some feedback.
+*/
+.Button-ctl.invisible>div {
+	background: none;
+	border-radius: 0;
+	border: none;
+}
+.Button-ctl.invisible.pressed>div {
+	border: 3px solid white;
+}
+
+/*  An invisible, round button that renders a thick, black border while active, and a thin
+	border while pressed.
+ */
+.Button-ctl.outline>div {
+	background: none;
+	border: none;
+}
+.Button-ctl.outline.pressed>div {
+	border: 1px solid black;
+}
+.Button-ctl.outline.active>div {
+	border: 3px solid black;
+}
+
+/*  A transparent, invisible, rectangular button that applies 50% transparent
+	black over whatever is behind while pressed to give some feedback. 
+
+	NOTE: This style is designed to be applied as a class to a containing block
+	- not to the button itself. This applies the same style to all buttons in said
+	container, which is often more convenient that applying a class to
+	each and every button.
+ */
+.darkenBtns .Button-ctl>div {
+	background: none;
+	border-radius: 0;
+	border: none;
+}
+.darkenBtns .Button-ctl.pressed>div {
+	background: rgba(0,0,0,0.5);
+}
+
+/**
+A flashing red indicator. To use, apply the class flashing to the indicator.
+ */
+.Indicator-ctl.active.flashing>div {
+	animation: flashing 1s infinite;
+}
+
+@keyframes flashing {
+  0%   {background-color: black;}
+  49%  {background-color: black;}
+  50%  {background-color: red;}
+  100%  {background-color: red;}
+}
+
+/*************** An iOS "slider switch" style button ***************
+
+	NOTE: Also requires the file SwitchInner.svg to be in the same directory
+	as this CSS file.
+
+ */
+
+.Button-ctl.sliderSwitch>div {
+	width: 104px;
+	height: 64px;        /* <------ The button MUST have these dimensions */
+
+	overflow: hidden;
+	border: 2px solid #888;
+	border-radius: 32px;
+	box-sizing: border-box;
+	background: white url("SwitchInner.svg") no-repeat -41px 1px;
+	transition: background-position 0.1s, background-color 0.2s;
+}
+
+.Button-ctl.sliderSwitch.active>div {
+	background-color: #63bd61;
+	background-position: 0 1px;
+}
+
+.Button-ctl.sliderSwitch.pressed>div {
+	box-shadow: 0 0 5px 3px #63bd61;
+}
+
+/****** A black, glossy button with orange or glowing text to indicate state. *******/
+
+.Button-ctl.glossy { /*	Base style, slightly larger, bold, orange text. */
+	color: orange;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.Button-ctl.glossy>div { /* Background gradient while not active. */
+	background-image: linear-gradient(0deg, #999 0%, #000 50%);
+	border-width: 0;
+}
+
+.Button-ctl.glossy>div:after {	/* A highlight to make button look extra shiny. */
+	content: "";
+	display: block;
+	position: absolute;
+	right: 10%;
+	left: 10%;
+	top: 1px;
+	height: 40%;
+	background-image: linear-gradient(180deg, #999 0%, #000 100%);
+	border-radius: 1000px;
+}
+
+/* Glowing yellow text while active. */
+.Button-ctl.glossy.active ctl-title.title-on-top { 
+	color: yellow;
+	text-shadow: 0 0 0.3em yellow, 0 0 0.8em gold;
+}
+
+/*	Apply a yellowish tint to the button's gradient when active,
+	to go with the glow 
+*/
+.Button-ctl.glossy.active>div {
+	background-image: linear-gradient(0deg, #BB9 0%, #000 50%);
+}
+
+/* Change the "pressed" outline to yellow instead of the default blue */
+.Button-ctl.glossy.pressed>div {
+	border: 2px yellow solid;
+
+}
+
