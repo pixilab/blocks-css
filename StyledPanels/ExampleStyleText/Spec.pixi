@@ -1,0 +1,168 @@
+{
+ "width": 1920,
+ "height": 1080,
+ "root": {
+  "mNextID": 9,
+  "blocks": [
+   {
+    "checkerboard": true,
+    "htmlText": "<h3 style=\"text-align: center;\">Look at /public/style/example-style-text.css for instructions.</h3>",
+    "enclosing": "root",
+    "id": 8,
+    "containerData": {
+     "kAARect": {
+      "y": 40,
+      "x": 0,
+      "width": 1920,
+      "height": 180,
+      "@cls": ".AARect"
+     }
+    },
+    "vertical": "middle",
+    "@cls": ".TextBlock"
+   },
+   {
+    "checkerboard": true,
+    "htmlText": "<p>Text getting styles from the block itself through the class .example-style-text</p>",
+    "enclosing": "root",
+    "id": 1,
+    "containerData": {
+     "kAARect": {
+      "y": 260,
+      "x": 280,
+      "width": 600,
+      "height": 100,
+      "@cls": ".AARect"
+     }
+    },
+    "vertical": "top",
+    "color": "#FFFFFF",
+    "@cls": ".TextBlock"
+   },
+   {
+    "checkerboard": true,
+    "htmlText": "<p>Using class .font-georgia to use Georgia instead of Arial, which is otherwise the default font for all text controls in this block.</p>",
+    "color": "#FFFFFF",
+    "vertical": "top",
+    "id": 2,
+    "containerData": {
+     "kAARect": {
+      "y": 420,
+      "x": 280,
+      "width": 600,
+      "height": 200,
+      "@cls": ".AARect"
+     }
+    },
+    "enclosing": "root",
+    "htmlClass": "font-georgia",
+    "@cls": ".TextBlock"
+   },
+   {
+    "checkerboard": true,
+    "htmlText": "<p>Using class .text-color-red to use a red color for the text instead of white, which is otherwise the default color for  text controls in this block.</p>",
+    "color": "#FFFFFF",
+    "vertical": "top",
+    "id": 3,
+    "containerData": {
+     "kAARect": {
+      "y": 680,
+      "x": 280,
+      "width": 600,
+      "height": 200,
+      "@cls": ".AARect"
+     }
+    },
+    "htmlClass": "text-color-red",
+    "enclosing": "root",
+    "@cls": ".TextBlock"
+   },
+   {
+    "checkerboard": true,
+    "htmlText": "<p>Mixing .font-georgia with .text-color-red</p>",
+    "color": "#FFFFFF",
+    "vertical": "top",
+    "id": 4,
+    "containerData": {
+     "kAARect": {
+      "y": 940,
+      "x": 280,
+      "width": 600,
+      "height": 60,
+      "@cls": ".AARect"
+     }
+    },
+    "htmlClass": "font-georgia text-color-red",
+    "enclosing": "root",
+    "@cls": ".TextBlock"
+   },
+   {
+    "checkerboard": true,
+    "htmlText": "<h1>Changing the default size of H1.</h1>",
+    "color": "#FFFFFF",
+    "vertical": "top",
+    "id": 5,
+    "containerData": {
+     "kAARect": {
+      "y": 260,
+      "x": 1020,
+      "width": 600,
+      "height": 180,
+      "@cls": ".AARect"
+     }
+    },
+    "enclosing": "root",
+    "@cls": ".TextBlock"
+   },
+   {
+    "checkerboard": true,
+    "htmlText": "<p>Changing the font size with a class.</p>",
+    "color": "#FFFFFF",
+    "vertical": "top",
+    "id": 7,
+    "containerData": {
+     "kAARect": {
+      "y": 480,
+      "x": 1020,
+      "width": 600,
+      "height": 180,
+      "@cls": ".AARect"
+     }
+    },
+    "enclosing": "root",
+    "htmlClass": "font-size-lg",
+    "@cls": ".TextBlock"
+   },
+   {
+    "checkerboard": true,
+    "htmlText": "<p>Using class .font-chicle to use the web font called Chicle.</p>",
+    "color": "#FFFFFF",
+    "vertical": "top",
+    "id": 6,
+    "containerData": {
+     "kAARect": {
+      "y": 680,
+      "x": 1020,
+      "width": 600,
+      "height": 200,
+      "@cls": ".AARect"
+     }
+    },
+    "htmlClass": "font-chicle",
+    "enclosing": "root",
+    "@cls": ".TextBlock"
+   }
+  ],
+  "checkerboard": true,
+  "snapToGrid": true,
+  "keepInside": true,
+  "enclosing": "",
+  "id": 1,
+  "timestamp": 1538069161401,
+  "htmlClass": "example-style-text",
+  "cssUrl": "/public/style/example-style-text.css",
+  "bgColor": "#000",
+  "@cls": ".Layered"
+ },
+ "@cls": ".RootBlock"
+}

@@ -1,0 +1,78 @@
+/*	To use these styles with any block you need to specify the
+	Custom CSS URL for a block to point to me at
+	"/public/style/example-style-text.css".
+
+	Notable CSS classes:
+
+	.example-style-text is a class added to the block itself.
+    .text-block is the default class for all text controls.
+
+	Information about !important
+
+    Sometimes we need to use !important in conjuction with a css rule
+    since .text-block has some of it's styles set with a style attribute,
+    which takes precedence over non non-important css styles.
+	Other styles are added to elements inside of .text-block, such as a p-tag.
+	!important let's you override these styles on the top element.
+	(Read more: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+ */
+
+/*	The styling of text controls used globally.
+ */
+.text-block {
+	box-sizing: border-box;
+	font-family: Helvetica, serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 32px !important;
+	line-height: 1.5;
+	color: white;
+}
+
+/*  The styling of text controls contained inside blocks with the class
+	.example-style-text attached to them. Do this by adding the class to
+	the "Custom CSS Classes" setting of the block.
+ */
+.example-style-text .text-block {
+	font-family: Arial, serif;
+}
+
+/*  Styling used for for text controls which has the class .font-georgia
+	attached to them. Do this by adding the class to the "Custom CSS Classes"
+	setting of the text control.
+ */
+.text-block.font-georgia {
+	font-family: Georgia, serif;
+}
+
+/* Same as above but setting the color of the text control to red.
+ */
+.text-block.text-color-red {
+	color: red !important;
+}
+
+/* Changing the default size of all H1 sized element inside a text control.
+ */
+.text-block h1 {
+	font-size: 56px !important;
+}
+
+/* Chagning the font-size of a text control having this class attached to it.
+ */
+.text-block.font-size-lg {
+	font-size: 48px !important;
+}
+
+@font-face {
+	font-family: 'Chicle';
+	src: url('/public/fonts/Chicle-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*  Use this class as you would the chicle web font imported above.
+ */
+.text-block.font-chicle {
+	font-family: Chicle, serif;
+	font-size: 48px !important;
+}
