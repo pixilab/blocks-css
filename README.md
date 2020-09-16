@@ -7,18 +7,18 @@ This repo contains various examples of such custom styling, along with blocks th
 
 For more information on custom CSS styling, please refer to the documentation found here:
 
-	https://int.pixilab.se/docs/blocks/custom_styling
+https://int.pixilab.se/docs/blocks/custom_styling
 
-The various CSS files found in this repo need to be copied into this folder of your Blocks installation (e.g., "PIXILAB-Blocks-root"):
-
-	public/style/
+The various CSS files found in this repo need to be copied into PIXILAB-Blocks-root/public/style/, or other suitable location under public.
 	
-You may need to create the _style_ folder if it doesn't already exist. 
-
-For more complex installations, you may want to create separate style folders for different parts of the system, to keep things separate. But the examples found in this repo assumes CSS files live under public/style/. If you do rename/move CSS to another folder under _public_, then remember to update the Custom CSS file path in the blocks accordingly.
+For more complex installations, you may want to create separate style folders for different parts of the system. However, the examples included here assume that CSS files live under public/style/. If you rename/move CSS to another folder under _public_, then remember to update the Custom CSS file path in the blocks accordingly.
 
 Put the contents of the StyledPanels directory into this folder of your Blocks installation (e.g., "PIXILAB-Blocks-root"):
 
 	public/block/Main
 	
-This will put them into the Main group. If desired, you can put them into another block group of your choise.
+This will put them into the _Main_ group. If desired, you can put them into another block group of your choise.
+
+**NOTE**: It is also possible to use Block-relative paths for custom CSS files. That's particularly useful for CSS that applies to a single block only, as this makes the CSS always follow the block (including when exporting/importing to zip). This is done by putting the CSS file into the block's directory, and then reference it from the Block beginning with a tilde, like this: 
+
+    ~/my-style.css
