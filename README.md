@@ -7,7 +7,7 @@ This repo contains various examples of such custom styling, along with blocks th
 
 For more information on custom CSS styling, please refer to the documentation found here:
 
-https://int.pixilab.se/docs/blocks/custom_styling
+https://pixilab.se/docs/blocks/custom_styling
 
 The various CSS files found in this repo need to be copied into PIXILAB-Blocks-root/public/style/, or other suitable location under public.
 	
