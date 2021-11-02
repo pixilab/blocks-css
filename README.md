@@ -19,6 +19,10 @@ Put the contents of the StyledPanels directory into this folder of your Blocks i
 	
 This will put them into the _Main_ group. If desired, you can put them into another block group of your choise.
 
-**NOTE**: It is also possible to use Block-relative paths for custom CSS files. That's particularly useful for CSS that applies to a single block only, as this makes the CSS always follow the block (including when exporting/importing to zip). This is done by putting the CSS file into the block's directory, and then reference it from the Block beginning with a tilde, like this: 
+It is also possible to use Block-relative paths for custom CSS files. That's particularly useful for CSS that applies to a single block only, as this makes the CSS always follow the block (including when exporting/importing to zip). This is done by putting the CSS file into the block's directory, and then reference it from the Block beginning with a tilde, like this: 
 
     ~/my-style.css
+
+Finally, you can provide a global spot CSS file using the _defaultSpotCSS_ option in the server configuration file. This will be automatically loaded into all Spots, and is useful for installation-wide, mandatory styling. More on this option here:
+
+https://pixilab.se/docs/blocks/server_configuration_file#top_level_items
