@@ -1,0 +1,20 @@
+/** Example Custom CSS transition implementing a "card drop" transition, where the incoming
+	block drops down with a couple of bounces.
+ */
+
+@keyframes bounce {
+    0% {transform: translate3d(0, -100%, 0); }
+    20%,53%,80%,100% {transform: translate3d(0, 0, 0); animation-timing-function: ease-out;}
+    40% {transform: translate3d(0, -30%, 0);}
+    70% {transform: translate3d(0, -15%, 0);}
+    90% {transform: translate3d(0, -4%, 0);}
+}
+
+.custom-transition-prepare {
+    transform: translate3d(0, -100%, 0);
+}
+
+.custom-transition-in {
+    animation-name: bounce;
+    animation-timing-function: ease-in;
+}
